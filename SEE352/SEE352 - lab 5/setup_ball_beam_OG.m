@@ -40,15 +40,15 @@ wf = 2 * pi * 4.0;
 %% Calculate Control Parameters
 if strcmp ( CONTROL_TYPE , 'MANUAL' )
     % Load model parameters based on servo configuration.    
-    K = 1.53; % enter correct value
-    tau = 0.0340; % enter correct value
+    K = 10; % enter correct value
+    tau = 0.1; % enter correct value
     % Rotary servo position control proportional gain (V/rad)
-    kp = 0.4989;
+    kp = 12;
     % Calculate Ball and Beam model gain.
-    K_bb = 0.418;
+    K_bb = 1;
     % Design Ball and Beam compensator
-    z = 1.4;
-    Kc = 5.3;
+    z = 1;
+    Kc = 0.5;
     %
 elseif strcmp ( CONTROL_TYPE , 'AUTO' )
     % Load nominal model parameters 
