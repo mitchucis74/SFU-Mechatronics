@@ -16,7 +16,7 @@ Rgrid_pu=0.005; % - grid filter R
 Rgrid=Rgrid_pu*Zb_solar;
 
 % dc-link parameters
-Vdc_ref = sqrt(6)*(1/1); % SVM  - Assume: Grid-side Phase voltage=1pu & ma=1 
+Vdc_ref = sqrt(6)*(1/1); % SVM - Assume:Grid-side Phase voltage=1pu & ma=1 
 Vdc_capacitor_initial = Vdc_ref*Vb; 
 
 % switching frequency
